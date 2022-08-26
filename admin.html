@@ -8,6 +8,7 @@
   <title>
     Assignment
   </title>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
@@ -16,17 +17,50 @@
 <body class="d-flex">
   <aside class="d-flex flex-column justify-content-between bg-light ps-5 pe-10 pt-5 pb-5">
     <nav class="nav flex-column">
-      <a href="" class="nav-brand d-flex">
-        <img
+      <a href="./index.html" class="nav-brand d-flex">
+        <img class="mb-5"
           src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week5/logo-ANSWER.svg"
-          alt="">
+          alt="LOGO">
       </a>
-      <a href="" class="nav-link d-flex p-0">
-        <span class="material-icons me-3">
-          video_library
-        </span>
-        <span>Dashboard</span>
-      </a>
+      <div class="d-flex flex-column gap-5">
+        <a href="#" class="nav-link d-flex p-0">
+          <span class="material-icons me-3">
+            assessment
+          </span>
+          <span>Dasoboard</span>
+        </a>
+        <a href="#" class="nav-link d-flex p-0">
+          <span class="material-icons me-3">
+            question_answer
+          </span>
+          <span>Question</span>
+        </a>
+        <a href="./index.html" class="nav-link d-flex p-0">
+          <span class="material-icons me-3">
+            assignment
+          </span>
+          <span>Assignment</span>
+        </a>
+        <a href="#" class="nav-link d-flex p-0">
+          <span class="material-icons me-3">
+            video_library
+          </span>
+          <span>Course</span>
+        </a>
+        <a href="./admin.html" class="nav-link d-flex p-0">
+          <span class="material-icons me-3">
+            supervisor_account
+          </span>
+          <span>Admin</span>
+        </a>
+        <a href="#" class="nav-link d-flex p-0">
+          <span class="material-icons me-3">
+            settings
+          </span>
+          <span>Settings</span>
+        </a>
+
+      </div>
     </nav>
 
     <div class="person-card d-flex align-items-center gap-3">
@@ -42,7 +76,320 @@
     </div>
   </aside>
 
-  
+  <main class="ps-5 w-100">
+  <nav class="navbar navbar-expand-lg navbar-light pt-5 pe-5 mb-6 pb-0">
+    <div class="container-fluid align-items-end p-0">
+      <a class="navbar-brand fw-bold fs-4" href="#">Admin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+        <div class="nav-item">
+          <a class="nav-link d-flex gray-900" href="#" role="button" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            <span class="material-icons expand-plus me-2">add
+            </span>
+            Add New Admin
+          </a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header p-5">
+                  <h5 class="modal-title fs-4 fw-bold" id="exampleModalLabel">Edit Admin</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 px-5 mb-3">
+
+                  <div class="account-form d-flex flex-column border-bottom pb-3 mb-3">
+                    <h5 class="fs-5 fw-bold">Account</h5>
+                    <form action="" class="account-form d-flex flex-column mb-3">
+                      <label for="account-name">Name</label>
+                      <input class="bg-light border border-white rounded p-3" type="name" id="account-name"
+                        placeholder="Emir Wicks" readonly>
+                    </form>
+
+                    <form action="" class="account-form d-flex flex-column">
+                      <label for="account-mail">Email</label>
+                      <input class="bg-light border border-white rounded p-3" type="mail" id="account-name"
+                        placeholder="emir.wicks@mail.com" readonly>
+                    </form>
+                  </div>
+
+                  <div class="verification-form d-flex flex-column border-bottom pb-3 mb-3">
+                    <h5 class="fs-5 fw-bold mt-3 mb-3">Verification</h5>
+                    <form action="" class="account-form d-flex flex-column mb-3">
+                      <label for="account-name" class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex align-items-center ">
+                          <span class="material-icons text-success me-2">check_circle</span>Verified
+                        </div>
+                        <small class="text-end">2020/4/12</small>
+                      </label>
+                      <input class="bg-light border border-white rounded p-3" type="name" id="account-name"
+                        placeholder="Emir Wicks" disabled>
+                    </form>
+
+                    <form action="" class="account-form d-flex flex-column">
+                      <label for="account-mail">Email</label>
+                      <input class="bg-light border border-white rounded p-3" type="email" id="account-mail"
+                        placeholder="emir.wicks@mail.com" readonly>
+                    </form>
+                  </div>
+
+                  <div class="access-level border-bottom pb-3 mb-3">
+                    <h5 class="fs-5 fw-bold mt-3 mb-3">Access Level</h5>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Admin</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="custom-access border-bottom pb-3 mb-3">
+                    <h5 class="fs-5 fw-bold mt-3 mb-3">Custom Access</h5>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label gray-900" for="flexCheckDefault">
+                        Lecture
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label gray-900" for="flexCheckChecked">
+                        Coupon
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label gray-900" for="flexCheckChecked">
+                        Message
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label gray-900" for="flexCheckChecked">
+                        Setting
+                      </label>
+                    </div>
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label gray-900" for="flexCheckChecked">
+                        Task Menu
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="deactivate">
+                    <h5 class="fs-5 fw-bold mt-3 mb-3">Deactivate Account</h5>
+                    <div class="d-flex align-items-center text-danger mb-3">
+                      <span class="material-icons text-danger me-2">warning</span>This cannot be undone!
+                    </div>
+                    <div class="col-12 mx-auto">
+                      <button type="button" class="btn btn-outline-danger py-3 text-center col-12">Deactivate This
+                        Account</button>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-outline-success">Update</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="d-flex navbar-icons">
+          <span class="material-icons mr-26">
+            search
+          </span>
+          <span class="material-icons">
+            notifications_active
+          </span>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Table -->
+  <div class="container-fluid pe-5">
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Verified</th>
+          <th scope="col"> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right">
+            <a role="button" class="text-dark text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              <span class="material-icons me-4">visibility</span>
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="card border-0 px-5 py-5">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emir.jpeg?raw=true"
+                          class="img-fluid" alt="Emir">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start p-0 ps-4">
+                          <div class="d-flex justify-content-between">
+                            <h5 class="card-title fs-6 gray-900">#1</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <h5 class="card-title fs-6 gray-900">Admin</h5>
+                          <h5 class="card-title fs-4 gray-900 fw-bold">Emir Wicks</h5>
+                          <h5 class="card-title fz-14 gray-600">emir.wicks@mail.com</h5>
+
+                          <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <h5 class="card-title fs-6 px-2 py-1  bg-light m-0">Verified</h5>
+
+                              <a class="collapsed" role="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                aria-controls="collapseWidthExample" aria-expanded="false">
+                                <span class="material-icons expand-more text-success">expand_more</span>
+                                <span class="material-icons expand-less text-success">expand_less</span>
+                              </a>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer pe-5 pb-5 border-0 collapse" id="collapseWidthExample">
+                    <button type="button" class="btn btn-outline-danger px-5 py-2"
+                      data-bs-dismiss="modal">Deactivate</button>
+                    <button type="button" class="btn btn-success px-5 py-2">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right">
+            <span class="material-icons me-4">visibility</span>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right"><span class="material-icons me-4">visibility</span>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right"><span class="material-icons me-4">visibility</span>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right"><span class="material-icons me-4">visibility</span>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right"><span class="material-icons me-4">visibility</span>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right"><span class="material-icons me-4">visibility</span>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right"><span class="material-icons me-4">visibility</span>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right"><span class="material-icons me-4">visibility</span>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td align="right"><span class="material-icons me-4">visibility</span>
+            <span class="material-icons">edit</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+</main>
 
     <!-- <footer class="footer">
       footer
@@ -50,6 +397,19 @@
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    <!-- 載入 CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor
+        .create(document.querySelector('#editor'))
+        .then(editor => {
+          console.log(editor);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    </script>
+    <!--  -->
 </body>
 
 </html>

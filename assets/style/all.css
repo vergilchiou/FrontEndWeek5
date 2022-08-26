@@ -11154,7 +11154,7 @@ aside {
   border-radius: 50%;
 }
 
-.expand-more {
+.expand-plus {
   color: #198754;
 }
 
@@ -11168,6 +11168,35 @@ aside {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true);
   background-size: cover;
   background-position: center;
+}
+
+.expand-more {
+  display: none;
+}
+
+.expand-less {
+  display: inline-block;
+}
+
+.collapsed .expand-more {
+  display: inline-block;
+}
+
+.collapsed .expand-less {
+  display: none;
+}
+
+.ck-reset {
+  border-top: 1px solid #ced4da;
+}
+
+.ck-editor__editable_inline {
+  height: 319px;
+}
+
+.modal-content img {
+  width: 141px;
+  height: 141px;
 }
 
 .t-hr {
