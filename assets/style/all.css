@@ -11199,6 +11199,18 @@ aside {
   height: 141px;
 }
 
+.pagination .page-link {
+  color: #198754;
+}
+
+.pagination .material-icons {
+  padding: 4px;
+}
+
+.pagination .page-number {
+  padding: 4px 12px;
+}
+
 .t-hr {
   border-top: 1px solid #ced4da;
 }
@@ -11210,6 +11222,10 @@ aside {
 
 .mr-26 {
   margin-right: 26px;
+}
+
+.mt-62 {
+  margin-top: 62px;
 }
 
 .fz-12 {
