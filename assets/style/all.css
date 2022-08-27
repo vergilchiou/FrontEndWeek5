@@ -11113,6 +11113,11 @@ aside {
 
 .nav .nav-link {
   color: #212529;
+  border-left: 4px solid transparent;
+}
+
+.nav .nav-link:hover {
+  border-left: 4px solid #198754;
 }
 
 .person-card img {
